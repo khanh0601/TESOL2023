@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Averta+PE:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: 'Averta PE';
+  src: url(../fonts/Averta\ PE\ Regular.otf);
+}
 
 body {
   font-family: "Averta PE", sans-serif !important;
@@ -71,7 +74,7 @@ a {
 .__header li a.nav-link span {
   color: #494949;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   display: block;
   line-height: 19.79px;
@@ -101,6 +104,26 @@ a {
 
 .__header ul.navbar-nav {
   gap: 5px;
+}
+
+@media screen and (max-width:1200px) {
+  .__header ul.navbar-nav {
+    position: fixed;
+    right: 0;
+    width: 225px;
+    z-index: 1;
+    background-color: white;
+    top: 100px;
+  }
+
+  .__header li a.nav-link {
+
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+  }
 }
 
 .footer {
@@ -508,6 +531,7 @@ a {
   border: none;
   cursor: pointer;
 }
+
 
 .page-3 .bg-map {
   padding-bottom: 80px;
@@ -1399,7 +1423,7 @@ button._btn-triangle .arrows-decor2::before {
 
 .__btn-collapse {
   margin-top: 33px;
-  margin-left: -110px;
+  margin-left: -60px;
 }
 
 .__max-h75 {
@@ -2313,9 +2337,7 @@ ul .item-menu-footer-active {
     zoom: 132%;
   }
 
-  .__btn-menu {
-    display: none;
-  }
+
 }
 
 @media screen and (max-width:500px) {
@@ -2444,11 +2466,7 @@ ul .item-menu-footer-active {
   }
 
 
-  .navbar .__btn-menu,
-  .navbar-collapse ul {
-    display: none !important;
 
-  }
 
 
   #carouselExampleControls .carousel-control-next {
@@ -2463,6 +2481,7 @@ ul .item-menu-footer-active {
 .__ms-14 {
   margin-left: 14px;
 }
+
 
 @media screen and (max-width: 768px) {
 
@@ -2488,11 +2507,23 @@ ul .item-menu-footer-active {
   border-radius: 10px;
   width: auto;
   cursor: pointer;
-
   width: 161px;
+  margin-left: 10px;
+  height: 46px;
 
-  right: 150px;
 }
+
+@media screen and (max-width: 767px) {
+  .footer {
+    height: 65px;
+  }
+}
+
+.__padding-header {
+  padding: 0 80px 0 16px;
+}
+
+@media screen and (max-width: 1200px) {}
 
 .__register-text {
   color: #FFFFFF;
@@ -2500,9 +2531,7 @@ ul .item-menu-footer-active {
   font-weight: 700;
 }
 
-.__header {
-  padding: 0 343px 0 150px;
-}
+
 
 .__py-20 {
   padding: 20px 0 !important;
@@ -2512,15 +2541,6 @@ ul .item-menu-footer-active {
   .__text-inf {
     zoom: 80%;
   }
-
-  .__header {
-    padding: 0 293px 0 100px;
-  }
-
-  .__btn-register-new {
-
-    right: 100px;
-  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -2528,14 +2548,8 @@ ul .item-menu-footer-active {
     padding: 90px 70px;
   }
 
-  .__header {
-    padding: 0 243px 0 50px;
-  }
 
-  .__btn-register-new {
 
-    right: 50px;
-  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -2543,19 +2557,14 @@ ul .item-menu-footer-active {
     padding: 50px 50px 20px 50px;
   }
 
-  .__header {
-    padding: 0 50px 0 50px;
-  }
+
 
   .navbar-collapse ul {
     margin-left: 50%;
 
   }
 
-  .__btn-register-new {
-    top: 25.9px;
-    right: 140px;
-  }
+
 }
 
 @media screen and (max-width:1170px) {
@@ -2600,15 +2609,10 @@ ul .item-menu-footer-active {
     padding: 50px 17px 20px 17px;
   }
 
-  .__header {
-    padding: 0 20px 0 16px;
-  }
 
 
-  .__btn-register-new {
-    top: unset;
-    right: 10px;
-  }
+
+
 
   .navbar-brand {
     zoom: 70%;
@@ -2869,5 +2873,220 @@ ul .item-menu-footer-active {
 
     transition-delay: 0.4s;
 
+  }
+}
+
+.__btn-menu {
+  right: 0 !important;
+  margin-top: 40px !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.navbar-light .navbar-toggler {
+  color: transparent !important;
+
+}
+
+.page-5 .bg_header {
+  background-color: #00186A;
+  height: 311px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-5 .__title-banner {
+  font-size: 60px;
+  line-height: 74px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.page-5 .__lable-banner {
+  font-weight: 600;
+  color: #48FEFF;
+  line-height: 22.25px;
+  text-align: center;
+  font-size: 16px;
+  padding: 0 30px;
+}
+
+.page-5 .mw-780 {
+  max-width: 830px;
+}
+
+.page-5 .__bg-body {
+  background-color: #EEEEEE;
+
+}
+
+.__question {
+  max-width: 1005px;
+  padding: 0 16px;
+}
+
+@media screen and (max-width: 1700px) {
+  .__question {
+    max-width: 886px;
+
+  }
+}
+
+.page-5 .tab-question {
+  padding: 10px 15px;
+  background-color: #D9D9D9;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.page-5 .tab-question:hover {
+  background-color: #B41A20;
+}
+
+.page-5 .tab-question:hover ._tab-question-content {
+  color: #FFFFFF;
+}
+
+.page-5 ._tab-question-content {
+  color: #8D8D8D;
+  font-size: 18px;
+  line-height: 22.25px;
+}
+
+.page-5 .tab-question-icon {
+  object-fit: contain;
+  margin-left: 12.5px;
+
+}
+
+.page-5 .__question .tab-active {
+  background-color: #B41A20 !important;
+}
+
+.page-5 .__question .tab-active ._tab-question-content {
+  color: #FFFFFF;
+}
+
+
+
+.page-5 .__tab {
+  background-color: #D9D9D9;
+  padding: 9px;
+  max-width: 532px;
+  border-radius: 10px;
+  margin: 52px 0 26px 0;
+}
+
+.page-5 .__question-content {
+  background-color: #FFFFFF;
+  padding: 21.5px 20px;
+  margin-bottom: 20px;
+
+}
+
+.page-5 .__question-title {
+  color: #001EA3;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+
+
+}
+
+.page-5 .__question-lable {
+
+  color: #252525;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22.25px;
+  padding: 18px 100px 18px 0;
+  display: none;
+}
+
+.page-5 .lable-active {
+  display: block !important;
+}
+
+.page-5 .__mb-86 {
+  margin-bottom: 86px !important;
+}
+
+.page-5 .content-active {
+  display: block !important;
+}
+
+.page-5 .content-unactive {
+  display: none;
+}
+
+.page-5 .img-content {
+  object-fit: contain;
+  cursor: pointer;
+  margin-left: 22px;
+}
+
+@media screen and (max-width:900px) {
+  .page-5 .__title-banner {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .page-5 .__lable-banner {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .page-5 .__title-banner {
+    font-size: 25px;
+    line-height: 31px;
+  }
+
+  .page-5 .__lable-banner {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0 15px;
+  }
+
+  .page-5 .__question-content {
+    margin-bottom: 17px;
+  }
+
+  .page-5 ._tab-question-content {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .page-5 .__tab {
+    max-width: 400px;
+    margin: 17px 0 17px 0;
+  }
+
+  .page-5 .__question-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .page-5 .__question-lable {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 12px 79px 12px 0;
+  }
+
+  .page-5 .mw-780 {
+    max-width: 420px;
+  }
+
+  .page-5 .img-content {
+    zoom: 70%;
+  }
+
+  .page-5 .__mb-86 {
+    margin-bottom: 35px !important;
   }
 }
