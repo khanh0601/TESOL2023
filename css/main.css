@@ -3089,4 +3089,25 @@ ul .item-menu-footer-active {
   .page-5 .__mb-86 {
     margin-bottom: 35px !important;
   }
+
+}
+
+@media screen and (max-width:450px) {
+  .page-5 .tab-question {
+    padding: 10px 10px;
+  }
+}
+
+@media screen and (max-width:420px) {
+  .page-5 .tab-question {
+    padding: 10px 5px;
+  }
+
+}
+
+@media screen and (max-width:389px) {
+  .page-5 .__tab {
+    padding: 9px 2px;
+  }
+
 }
