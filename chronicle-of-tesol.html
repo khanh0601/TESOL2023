@@ -19,14 +19,30 @@
 
 <body class="page-4">
     <!-- Header -->
-    <div>
-        <nav class="navbar navbar-expand-xl navbar-light bg-light  __header position-relative">
-
-            <a class="navbar-brand __py-20" href="#">
+    <div class="d-flex flex-xl-column position-relative">
+        <div class="col-12 d-flex justify-content-xl-center justify-content-between __padding-header">
+            <a class=" __py-20" href="#">
                 <img src="https://hcm01.vstorage.vngcloud.vn/v1/AUTH_77c1e15122904b63990a9da99711590d/TESOL/logo.png"
                     alt="" class="logo-header">
             </a>
-            <div class="collapse navbar-collapse justify-content-end" id="__headerNavbar">
+            <div class="__btn-register-new d-flex justify-content-between d-xl-none my-auto" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                <div><img
+                        src="https://hcm01.vstorage.vngcloud.vn/v1/AUTH_77c1e15122904b63990a9da99711590d/TESOL/icon-phone-register.png"
+                        alt=""></div>
+                <div>
+                    <p class="__register-text">REGISTER</p>
+                </div>
+                <div class="d-flex my-auto">
+                    <img src="https://hcm01.vstorage.vngcloud.vn/v1/AUTH_77c1e15122904b63990a9da99711590d/TESOL/icon-arrow-register.png"
+                        alt="" class="__wh-ar">
+                    <img src="https://hcm01.vstorage.vngcloud.vn/v1/AUTH_77c1e15122904b63990a9da99711590d/TESOL/icon-arrow-register.png"
+                        alt="" class="__wh-ar">
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-xl navbar-light bg-light  __header  d-flex justify-content-center pt-0 pb-3">
+            <div class="collapse navbar-collapse justify-content-center" id="__headerNavbar">
                 <ul class="navbar-nav mr-auto ">
                     <li class="nav-item ">
                         <a class="nav-link" href="index.html">
@@ -48,23 +64,40 @@
                                 TESOL</span>
                         </a>
                     </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link " href="FAQs.html"><span class="protal-text text-menu">A
+                                FAQs</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link " href="ATeachEnglish.html"><span class="protal-text text-menu">A
+                                Teach English at VUS</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link " href="About.html"><span class="protal-text text-menu">About
+                                us</span>
+                        </a>
+                    </li>
                 </ul>
-            </div>
-            <div class="__btn-register-new d-flex justify-content-between position-absolute" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">
-                <div><img
-                        src="https://hcm01.vstorage.vngcloud.vn/v1/AUTH_77c1e15122904b63990a9da99711590d/TESOL/icon-phone-register.png"
-                        alt=""></div>
-                <div>
-                    <p class="__register-text">REGISTER</p>
+                <div class="__btn-register-new d-xl-flex justify-content-between d-none " data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <div><img
+                            src="https://hcm01.vstorage.vngcloud.vn/v1/AUTH_77c1e15122904b63990a9da99711590d/TESOL/icon-phone-register.png"
+                            alt=""></div>
+                    <div>
+                        <p class="__register-text">REGISTER</p>
+                    </div>
+                    <div class="d-flex my-auto">
+                        <img src="https://hcm01.vstorage.vngcloud.vn/v1/AUTH_77c1e15122904b63990a9da99711590d/TESOL/icon-arrow-register.png"
+                            alt="" class="__wh-ar">
+                        <img src="https://hcm01.vstorage.vngcloud.vn/v1/AUTH_77c1e15122904b63990a9da99711590d/TESOL/icon-arrow-register.png"
+                            alt="" class="__wh-ar">
+                    </div>
                 </div>
-                <div class="d-flex my-auto">
-                    <img src="https://hcm01.vstorage.vngcloud.vn/v1/AUTH_77c1e15122904b63990a9da99711590d/TESOL/icon-arrow-register.png"
-                        alt="" class="__wh-ar">
-                    <img src="https://hcm01.vstorage.vngcloud.vn/v1/AUTH_77c1e15122904b63990a9da99711590d/TESOL/icon-arrow-register.png"
-                        alt="" class="__wh-ar">
-                </div>
             </div>
+
+
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog d-flex justify-content-center  my-5" style="width: 50%;">
@@ -181,7 +214,7 @@
     </section>
     <!-- Footer -->
     <div>
-        <div class="d-md-block d-none">
+        <div>
             <footer class="  footer d-flex justify-content-center align-content-center ">
                 <div class="container d-flex justify-content-center align-content-center">
                     <div class="row justify-content-center align-content-center">
@@ -192,7 +225,7 @@
             </footer>
         </div>
 
-        <footer class="d-block d-md-none">
+        <!-- <footer class="d-block d-md-none">
             <div class="footer-mobile d-flex flex-row justify-content-center">
                 <ul class="  d-flex justify-content-evenly menu-footer w-100 h-100">
                     <li class="footer-text-mobile __item-center  position-relative   ">
@@ -229,7 +262,7 @@
                 </ul>
             </div>
 
-        </footer>
+        </footer> -->
     </div>
     <!-- End Footer -->
     <script src="js/bootstrap.min.js"></script>
@@ -240,6 +273,18 @@
                 // Animation complete.
             });
         });
+        $('.__btn-menu').click(function () {
+            $(this).closest('div').next('.__question-lable').toggleClass('lable-active');
+            console.log($(this).closest('div').next('.__question-lable'));
+            var src = $('.icon-menu').attr('src');
+            if (src === 'https://hcm01.vstorage.vngcloud.vn/v1/AUTH_77c1e15122904b63990a9da99711590d/LXP_Media/skins/form_payment/menu.svg') {
+                $('.icon-menu').attr('src', 'img/icon-close-collap.png');
+            }
+            else {
+                $('.icon-menu').attr('src', 'https://hcm01.vstorage.vngcloud.vn/v1/AUTH_77c1e15122904b63990a9da99711590d/LXP_Media/skins/form_payment/menu.svg');
+            }
+
+        })
     </script>
 </body>
 
